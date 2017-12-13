@@ -2,7 +2,8 @@
 <form i18nBaseUri="system-config.twitter-card:">
 	<tab id="default">
 		<fieldset id="default">
-			<field name="twitter_account" control="textinput" required="true" />
+			<field name="twitter_account"     control="textinput"   />
+			<field name="summary_large_image" control="yesnoswitch" />
 		</fieldset>
 	</tab>
 </form>
