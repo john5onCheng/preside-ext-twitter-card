@@ -8,8 +8,8 @@
 
 	local.title          = Len( local.browserTitle ) ? local.browserTitle : local.title;
 	local.teaser         = Len( local.teaser       ) ? local.teaser       : local.description;
-	twitterSite          = event.getSystemSetting( 'twitter-card', 'twitter_account', '' );
-	useSummaryLargeImage = event.getSystemSetting( 'twitter-card', 'summary_large_image', true );
+	twitterSite          = getSystemSetting( 'twitter-card', 'twitter_account', '' );
+	useSummaryLargeImage = getSystemSetting( 'twitter-card', 'summary_large_image', true );
 </cfscript>
 
 <cfoutput>
