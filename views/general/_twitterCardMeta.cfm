@@ -5,15 +5,19 @@
 	local.browsertitle = Trim( event.getPageProperty( "browser_title"      ) );
 	local.title        = Trim( event.getPageProperty( "title"              ) );
 	local.mainImage    = Trim( event.getPageProperty( "main_image"         ) );
-	local.ogType       = local.site.og_type ?: "website";
 
-	local.title  = Len( local.browserTitle ) ? local.browserTitle : local.title;
-	local.teaser = Len( local.teaser       ) ? local.teaser       : local.description;
-	twitterSite  = event.getSystemSetting( 'twitter-card', 'twitter_account', '' );
+	local.title          = Len( local.browserTitle ) ? local.browserTitle : local.title;
+	local.teaser         = Len( local.teaser       ) ? local.teaser       : local.description;
+	twitterSite          = event.getSystemSetting( 'twitter-card', 'twitter_account', '' );
+	useSummaryLargeImage = event.getSystemSetting( 'twitter-card', 'summary_large_image', true );
 </cfscript>
 
 <cfoutput>
-	<meta name="twitter:card" content="summary" />
+	<cfif useSummaryLargeImage>
+		<meta name="twitter:card" content="summary_large_image">
+	<cfelse>
+		<meta name="twitter:card" content="summary" />
+	</cfif>
 	<cfif !isEmpty( twitterSite )>
 		<meta name="twitter:site" content="#twitterSite#" />
 	</cfif>
