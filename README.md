@@ -1,1 +1,1 @@
-# preside-ext-twitter-card
+Add renderView( "/general/_twitterCardMeta" ); within the <head> tag

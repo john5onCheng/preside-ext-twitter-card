@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form i18nBaseUri="system-config.twitter-card:">
+	<tab id="default">
+		<fieldset id="default">
+			<field name="twitter_account" control="textinput" required="true" />
+		</fieldset>
+	</tab>
+</form>
