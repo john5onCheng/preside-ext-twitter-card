@@ -2,7 +2,7 @@
     "name":"PresideCMS Extension: Twitter card",
     "type":"preside-extensions",
     "version":"1.0.0",
-    "location":"https://github.com/john5oncheng/preside-ext-twitter-card/archive/v1.0.1.zip",
+    "location":"https://github.com/john5oncheng/preside-ext-twitter-card/archive/v1.0.2.zip",
     "author":"Johnson Cheng",
     "directory":"application/extensions",
     "homepage":"https://github.com/john5oncheng/preside-ext-twitter-card",
