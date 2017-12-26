@@ -1,6 +1,6 @@
 {
-	  "id"        : "preside-ext-twitter-card"
-	, "title"     : "Preside Twitter card extension"
-	, "author"    : "Pixl8 Interactive"
-	, "version"   : "1.0.3"
+	  "id"      : "preside-ext-twitter-card"
+	, "title"   : "Preside Twitter card extension"
+	, "author"  : "Johnson Cheng"
+	, "version" : "1.0.4"
 }
