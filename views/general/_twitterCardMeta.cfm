@@ -13,7 +13,7 @@
 </cfscript>
 
 <cfoutput>
-	<cfif useSummaryLargeImage>
+	<cfif useSummaryLargeImage == 1>
 		<meta name="twitter:card" content="summary_large_image">
 	<cfelse>
 		<meta name="twitter:card" content="summary" />
@@ -26,6 +26,6 @@
 		<meta name="twitter:description" content="#HtmlEditFormat( local.teaser )#" />
 	</cfif>
 	<cfif Len( local.mainImage )>
-		<meta name="twitter:image" content="#event.buildLink( assetId=local.mainImage )#" />
+		<meta name="twitter:image" content="#event.buildLink( assetId=local.mainImage, derivative='socialMediaImage' )#" />
 	</cfif>
 </cfoutput>
