@@ -14,7 +14,8 @@
 	useAlternativeImage  = getSystemSetting( 'twitter-card', 'use_alternative_image_from_content', true );
 
 	if( !Len( local.mainImage ) && useAlternativeImage ){
-		local.mainImage = findNextEmbeddedImage( event.getPageProperty( "main_content" ) ).asset ?: "";
+		assetFount      = findNextEmbeddedImage( event.getPageProperty( "main_content" ) ) ?: {};
+		local.mainImage = assetFount.asset ?: "";
 	}
 </cfscript>
 
