@@ -4,7 +4,7 @@ component {
 		var settings  = arguments.config.settings  ?: {};
 		settings.assetManager.derivatives.socialMediaImage = {
 			  permissions = "inherit"
-			, transformations = [ { method="resize", args={ width=1200, height=630, maintainaspectratio=true } } ]
+			, transformations = [ { method="resize", args={ width=600, height=314, maintainaspectratio=true } } ]
 		};
 
 	}

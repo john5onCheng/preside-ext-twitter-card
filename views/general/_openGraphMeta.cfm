@@ -11,6 +11,11 @@
 	local.teaser         = Len( local.teaser       ) ? local.teaser       : local.description;
 	twitterSite          = getSystemSetting( 'twitter-card', 'twitter_account', '' );
 	useSummaryLargeImage = getSystemSetting( 'twitter-card', 'summary_large_image', true );
+	useAlternativeImage  = getSystemSetting( 'twitter-card', 'use_alternative_image_from_content', true );
+
+	if( !Len( local.mainImage ) && useAlternativeImage ){
+		local.mainImage = findNextEmbeddedImage( event.getPageProperty( "main_content" ) ).asset ?: "";
+	}
 </cfscript>
 
 <cfoutput>
